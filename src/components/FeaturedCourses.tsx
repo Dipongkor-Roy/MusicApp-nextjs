@@ -37,16 +37,16 @@ const FeaturedCourses = () => {
       {/* featured couses Todo: turn on  */}
       <div className="mt-10">
         {/* course cards */}
-        {/* <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {featuredCourse.map((course: Course) => (
             <div key={course.id} className="flex justify-center">
-           <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
+           <BackgroundGradient className="flex flex-wrap flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
             <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
             <Image
           src={course.image}
-          alt="jordans"
-          height="220"
-          width="220"
+          alt={course.title}
+          height="180"
+          width="180"
           className="object-contain"
         />
             <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
@@ -66,11 +66,11 @@ const FeaturedCourses = () => {
            </BackgroundGradient>
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
       {/* btn */}
       {/* todo turn on the btn */}
-      {/* <div className="mt-20 text-center">
+      <div className="mt-20 text-center">
         <Link href={"/courses"}>
           <Button
             borderRadius="1.75rem"
@@ -81,7 +81,7 @@ const FeaturedCourses = () => {
             </span>
           </Button>
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 };
